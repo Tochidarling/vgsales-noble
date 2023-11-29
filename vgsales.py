@@ -8,7 +8,7 @@ from urllib.error import URLError
 
 @st.cache_data
 def get_data():
-    path_ = '/vgsales.csv'
+    path_ = 'vgsales.csv'
     df = pd.read_csv(path_)
     # drop NAN on Year & Publisher
     df.dropna(inplace=True)
